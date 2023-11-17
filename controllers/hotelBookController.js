@@ -1,7 +1,5 @@
 import hotelBookUser from "../models/hotelBookUser.js";
 import OrderHotelRazor from "../models/OrderHotelRazor.js";
-import mongoose from "mongoose";
-import { useParams } from 'react-router-dom';
 export const hotelBookController = async (req, res) => {
   try {
     const { name, checkin, checkout, phone, adult, children, idProof, address,parentCategory,parentSubCategory,branch ,roomCount} = req.body;
